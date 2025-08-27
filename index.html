@@ -156,6 +156,182 @@
             text-align: center;
             font-size: 2.5rem;
             color: var(--primary-green);
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Game Logo Styles */
+        .game-logo {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Dark Souls 3 Logo */
+        .ds3-logo {
+            font-family: serif;
+            font-size: 48px;
+            font-weight: bold;
+            color: #ff6600;
+            text-shadow: 0 0 10px rgba(255, 102, 0, 0.8), 0 0 20px rgba(255, 102, 0, 0.4);
+            letter-spacing: -5px;
+            position: relative;
+        }
+        .ds3-logo::before {
+            content: '🔥';
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            animation: flicker 2s infinite;
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Elden Ring Logo */
+        .er-logo {
+            width: 70px;
+            height: 70px;
+            border: 3px solid #d4af37;
+            border-radius: 50%;
+            position: relative;
+            background: radial-gradient(circle at center, transparent 30%, #d4af37 31%, transparent 33%);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+        }
+        .er-logo::before {
+            content: '';
+            position: absolute;
+            inset: 15%;
+            border: 2px solid #d4af37;
+            border-radius: 50%;
+        }
+        .er-logo::after {
+            content: 'ER';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            color: #d4af37;
+            font-size: 18px;
+        }
+
+        /* Grim Dawn Logo */
+        .gd-logo {
+            font-family: serif;
+            font-size: 36px;
+            font-weight: bold;
+            background: linear-gradient(180deg, #8b0000 0%, #4b0082 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(139, 0, 139, 0.8);
+            position: relative;
+        }
+        .gd-logo::after {
+            content: 'GD';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            filter: blur(8px);
+            opacity: 0.5;
+        }
+
+        /* Path of Exile 2 Logo */
+        .poe2-logo {
+            position: relative;
+            width: 70px;
+            height: 70px;
+        }
+        .poe2-logo::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #4a0e0e 0%, #8b4513 50%, #4a0e0e 100%);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            box-shadow: 0 0 20px rgba(139, 69, 19, 0.6);
+        }
+        .poe2-logo::after {
+            content: '2';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+        }
+
+        /* Soulframe Logo */
+        .sf-logo {
+            position: relative;
+            width: 70px;
+            height: 70px;
+            background: conic-gradient(from 0deg, #00ff88, #00ffff, #00ff88);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sf-logo::before {
+            content: '';
+            position: absolute;
+            inset: 3px;
+            background: var(--card-bg);
+            border-radius: 50%;
+        }
+        .sf-logo::after {
+            content: 'SF';
+            position: absolute;
+            font-size: 24px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #00ff88, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Space Marine 2 Logo */
+        .sm2-logo {
+            position: relative;
+            width: 70px;
+            height: 70px;
+        }
+        .sm2-logo::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 70px;
+            background: linear-gradient(180deg, #ffd700 0%, #ff0000 50%, #ffd700 100%);
+            clip-path: polygon(50% 0%, 65% 25%, 100% 25%, 75% 45%, 85% 75%, 50% 55%, 15% 75%, 25% 45%, 0% 25%, 35% 25%);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+        .sm2-logo::after {
+            content: 'II';
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
         }
 
         .tool-content {
@@ -239,7 +415,9 @@
             <h2 class="category-title">Gaming Randomizers</h2>
             <div class="tool-grid">
                 <a href="DarkSouls3CharacterRandomizer/" class="tool-card">
-                    <div class="tool-icon">⚔️</div>
+                    <div class="tool-icon">
+                        <div class="game-logo ds3-logo">DS3</div>
+                    </div>
                     <div class="tool-content">
                         <h3 class="tool-title">Dark Souls 3 Character</h3>
                         <p class="tool-description">Generate random character builds for your Dark Souls 3 adventures</p>
@@ -247,41 +425,51 @@
                 </a>
                 
                 <a href="EldenRingCharacterRandomizer/" class="tool-card">
-                    <div class="tool-icon">🗡️</div>
+                    <div class="tool-icon">
+                        <div class="game-logo er-logo"></div>
+                    </div>
                     <div class="tool-content">
-                        <h3 class="tool-title">Elden Ring Character Randomizer</h3>
+                        <h3 class="tool-title">Elden Ring Character</h3>
                         <p class="tool-description">Create unique Elden Ring character builds and playstyles</p>
                     </div>
                 </a>
                 
                 <a href="GrimDawnCharacterRandomizer/" class="tool-card">
-                    <div class="tool-icon">💀</div>
+                    <div class="tool-icon">
+                        <div class="game-logo gd-logo">GD</div>
+                    </div>
                     <div class="tool-content">
-                        <h3 class="tool-title">Grim Dawn Character Randomizer</h3>
+                        <h3 class="tool-title">Grim Dawn Character</h3>
                         <p class="tool-description">Randomize your Grim Dawn character class combinations</p>
                     </div>
                 </a>
                 
                 <a href="Poe2SimpleBuildRandomizer/" class="tool-card">
-                    <div class="tool-icon">🔮</div>
+                    <div class="tool-icon">
+                        <div class="game-logo poe2-logo"></div>
+                    </div>
                     <div class="tool-content">
-                        <h3 class="tool-title">Path of Exile 2 Character Randomizer</h3>
+                        <h3 class="tool-title">PoE 2 Simple Build</h3>
                         <p class="tool-description">Quick and simple Path of Exile 2 build generator</p>
                     </div>
                 </a>
                 
                 <a href="SoulframeLoadoutRandomizer/" class="tool-card">
-                    <div class="tool-icon">🏹</div>
+                    <div class="tool-icon">
+                        <div class="game-logo sf-logo"></div>
+                    </div>
                     <div class="tool-content">
-                        <h3 class="tool-title">Soulframe Loadout Randomizer</h3>
+                        <h3 class="tool-title">Soulframe Loadout</h3>
                         <p class="tool-description">Generate random Soulframe weapon and gear loadouts</p>
                     </div>
                 </a>
                 
                 <a href="SpaceMarine2LoadoutRandomizer/" class="tool-card">
-                    <div class="tool-icon">🚀</div>
+                    <div class="tool-icon">
+                        <div class="game-logo sm2-logo"></div>
+                    </div>
                     <div class="tool-content">
-                        <h3 class="tool-title">Space Marine 2 Loadout Randomizer</h3>
+                        <h3 class="tool-title">Space Marine 2 Loadout</h3>
                         <p class="tool-description">Randomize your Space Marine 2 weapons and equipment</p>
                     </div>
                 </a>
@@ -295,7 +483,7 @@
 
         <!-- Creative Tools Section -->
         <section class="category-section">
-            <h2 class="category-title">Creative Randomizers</h2>
+            <h2 class="category-title">Creative Generators</h2>
             <div class="tool-grid">
                 <a href="ArtworkMediaRandomizer/" class="tool-card">
                     <div class="tool-icon">🎨</div>
@@ -315,14 +503,23 @@
             </div>
         </section>
 
+        <!-- Lifestyle Tools Section -->
         <section class="category-section">
-            <h2 class="category-title">Homebrewing Randomizers</h2>
+            <h2 class="category-title">Lifestyle Randomizers</h2>
             <div class="tool-grid">
                 <a href="HomebrewingWineRandomizer/" class="tool-card">
                     <div class="tool-icon">🍷</div>
                     <div class="tool-content">
                         <h3 class="tool-title">Homebrewing Wine</h3>
                         <p class="tool-description">Create random wine recipes for your homebrewing adventures</p>
+                    </div>
+                </a>
+                
+                <a href="WineAndMeadBrewingRandomizer/" class="tool-card">
+                    <div class="tool-icon">🍯</div>
+                    <div class="tool-content">
+                        <h3 class="tool-title">Wine & Mead Brewing</h3>
+                        <p class="tool-description">Explore random wine and mead brewing combinations</p>
                     </div>
                 </a>
             </div>
