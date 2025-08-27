@@ -163,167 +163,7 @@
             position: relative;
         }
 
-        /* Dark Souls 3 Logo */
-        .ds3-logo {
-            font-family: serif;
-            font-size: 48px;
-            font-weight: bold;
-            color: #ff6600;
-            text-shadow: 0 0 10px rgba(255, 102, 0, 0.8), 0 0 20px rgba(255, 102, 0, 0.4);
-            letter-spacing: -5px;
-            position: relative;
-        }
-        .ds3-logo::before {
-            content: '🔥';
-            position: absolute;
-            top: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 24px;
-            animation: flicker 2s infinite;
-        }
-        @keyframes flicker {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        /* Elden Ring Logo */
-        .er-logo {
-            width: 70px;
-            height: 70px;
-            border: 3px solid #d4af37;
-            border-radius: 50%;
-            position: relative;
-            background: radial-gradient(circle at center, transparent 30%, #d4af37 31%, transparent 33%);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
-        }
-        .er-logo::before {
-            content: '';
-            position: absolute;
-            inset: 15%;
-            border: 2px solid #d4af37;
-            border-radius: 50%;
-        }
-        .er-logo::after {
-            content: 'ER';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-weight: bold;
-            color: #d4af37;
-            font-size: 18px;
-        }
-
-        /* Grim Dawn Logo */
-        .gd-logo {
-            font-family: serif;
-            font-size: 36px;
-            font-weight: bold;
-            background: linear-gradient(180deg, #8b0000 0%, #4b0082 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 30px rgba(139, 0, 139, 0.8);
-            position: relative;
-        }
-        .gd-logo::after {
-            content: 'GD';
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            filter: blur(8px);
-            opacity: 0.5;
-        }
-
-        /* Path of Exile 2 Logo */
-        .poe2-logo {
-            position: relative;
-            width: 70px;
-            height: 70px;
-        }
-        .poe2-logo::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #4a0e0e 0%, #8b4513 50%, #4a0e0e 100%);
-            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-            box-shadow: 0 0 20px rgba(139, 69, 19, 0.6);
-        }
-        .poe2-logo::after {
-            content: '2';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 24px;
-            font-weight: bold;
-            color: #ffd700;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
-        }
-
-        /* Soulframe Logo */
-        .sf-logo {
-            position: relative;
-            width: 70px;
-            height: 70px;
-            background: conic-gradient(from 0deg, #00ff88, #00ffff, #00ff88);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .sf-logo::before {
-            content: '';
-            position: absolute;
-            inset: 3px;
-            background: var(--card-bg);
-            border-radius: 50%;
-        }
-        .sf-logo::after {
-            content: 'SF';
-            position: absolute;
-            font-size: 24px;
-            font-weight: bold;
-            background: linear-gradient(45deg, #00ff88, #00ffff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        /* Space Marine 2 Logo */
-        .sm2-logo {
-            position: relative;
-            width: 70px;
-            height: 70px;
-        }
-        .sm2-logo::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 70px;
-            background: linear-gradient(180deg, #ffd700 0%, #ff0000 50%, #ffd700 100%);
-            clip-path: polygon(50% 0%, 65% 25%, 100% 25%, 75% 45%, 85% 75%, 50% 55%, 15% 75%, 25% 45%, 0% 25%, 35% 25%);
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-        }
-        .sm2-logo::after {
-            content: 'II';
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #ffd700;
-            text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
-        }
+        
 
         .tool-content {
             padding: 20px;
@@ -361,6 +201,20 @@
             color: var(--text-light);
             opacity: 0.7;
             font-size: 0.9rem;
+        }
+
+        a {
+            color: #66cc66; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .coffee-link {
+            text-align: center;
+            margin-top: 2rem;
         }
 
         /* Responsive Design */
