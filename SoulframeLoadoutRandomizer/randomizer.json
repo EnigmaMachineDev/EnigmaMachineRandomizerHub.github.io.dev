@@ -1,0 +1,170 @@
+{
+  "Primary": [
+    {
+      "name": "Blitzel",
+      "link": "https://wiki.avakot.org/Items/Weapons/blitzel"
+    },
+    {
+      "name": "Juniper",
+      "link": "https://wiki.avakot.org/Items/Weapons/juniper"
+    },
+    {
+      "name": "Thistle",
+      "link": "https://wiki.avakot.org/Items/Weapons/thistle"
+    },
+    {
+      "name": "Igne Mora",
+      "link": "https://wiki.avakot.org/Items/Weapons/ignemora"
+    },
+    {
+      "name": "Sollos-I",
+      "link": "https://wiki.avakot.org/Items/Weapons/sollos-i"
+    },
+    {
+      "name": "Vetch",
+      "link": "https://wiki.avakot.org/Items/Weapons/vetch"
+    },
+    {
+      "name": "Wulder",
+      "link": "https://wiki.avakot.org/Items/Weapons/wulder"
+    },
+    {
+      "name": "Gwylen",
+      "link": "https://wiki.avakot.org/Items/Weapons/gwylen"
+    },
+    {
+      "name": "Odiac",
+      "link": "https://wiki.avakot.org/Items/Weapons/odiac"
+    },
+    {
+      "name": "Duhk Halic",
+      "link": "https://wiki.avakot.org/Items/Weapons/duhkhalic"
+    },
+    {
+      "name": "Gathannan",
+      "link": "https://wiki.avakot.org/Items/Weapons/gathannan"
+    },
+    {
+      "name": "Rook",
+      "link": "https://wiki.avakot.org/Items/Weapons/rook"
+    },
+    {
+      "name": "Vasp-IV",
+      "link": "https://wiki.avakot.org/Items/Weapons/vasp-iv"
+    },
+    {
+      "name": "Bog & Myrtle",
+      "link": "https://wiki.avakot.org/Items/Weapons/bogmyrtle"
+    },
+    {
+      "name": "Oryn Umbr",
+      "link": "https://wiki.avakot.org/Items/Weapons/oryn-umbr"
+    },
+    {
+      "name": "Rivt-II",
+      "link": "https://wiki.avakot.org/Items/Weapons/rivt-ii"
+    },
+    {
+      "name": "The Royal Tines",
+      "link": "https://wiki.avakot.org/Items/Weapons/theroyaltines"
+    },
+    {
+      "name": "Unsula",
+      "link": "https://wiki.avakot.org/Items/Weapons/unsula"
+    }
+  ],
+  "Secondary": [
+    {
+      "name": "Precklies",
+      "link": "https://wiki.avakot.org/Items/Sidearms/precklies"
+    },
+    {
+      "name": "Skilter",
+      "link": "https://wiki.avakot.org/Items/Sidearms/skilter"
+    },
+    {
+      "name": "Grinn",
+      "link": "https://wiki.avakot.org/Items/Sidearms/grinn"
+    },
+    {
+      "name": "Nettle",
+      "link": "https://wiki.avakot.org/Items/Sidearms/nettle"
+    },
+    {
+      "name": "Virdigris",
+      "link": "https://wiki.avakot.org/Items/Sidearms/virdigris"
+    }
+  ],
+  "Pact": [
+    {
+      "name": "Garren Rood",
+      "link": "https://wiki.avakot.org/Items/Pacts/garrenrood"
+    },
+    {
+      "name": "Mora's Hand",
+      "link": "https://wiki.avakot.org/Items/Pacts/morashand"
+    },
+    {
+      "name": "Ode Tempest",
+      "link": "https://wiki.avakot.org/Items/Pacts/odetempest"
+    },
+    {
+      "name": "Orengall",
+      "link": "https://wiki.avakot.org/Items/Pacts/orengall"
+    },
+    {
+      "name": "Sirin",
+      "link": "https://wiki.avakot.org/Items/Pacts/sirin"
+    },
+    {
+      "name": "Tethren",
+      "link": "https://wiki.avakot.org/Items/Pacts/tethren"
+    },
+    {
+      "name": "Oscelda",
+      "link": "https://wiki.avakot.org/Items/Pacts/oscelda"
+    }
+  ],
+  "Armor": [
+    {
+      "name": "Circade Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    },
+    {
+      "name": "Deora Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    },
+    {
+      "name": "Fire King Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    },
+    {
+      "name": "Garren Rood Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    },
+    {
+      "name": "Mendicant King Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    },
+    {
+      "name": "Ornegall Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    },
+    {
+      "name": "Signet Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    },
+    {
+      "name": "Sproutfolk Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    },
+    {
+      "name": "Tempest Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    },
+    {
+      "name": "Tulvulkane Set",
+      "link": "https://wiki.avakot.org/Items/Armor"
+    }
+  ]
+}
