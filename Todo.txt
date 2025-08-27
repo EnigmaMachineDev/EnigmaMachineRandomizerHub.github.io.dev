@@ -1,1 +1,3 @@
 Update soulframe randomizer to use new avakot.org links (Urgent)
+
+Standardize Style accross randomizers to align with Soulframe randomizer style
