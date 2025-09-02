@@ -1,7 +1,11 @@
-Standardize Style accross randomizers to align with Soulframe randomizer style
-
-Deploy Production Randomizer Hub
-
-Fix Old Sites to Redirect to Current Randomizer Hub Urls
-
-Analyze and add any needed content for adsense to randomizer hub, then apply for adsense
+Realm of the Mad God Randomizer
+Warframe Loadout Randomizer
+Distilling Randomizer
+Beer Brewing Randomizer
+General Brewing Randomizer
+Facebook Acccount
+Instagram Acccount
+No Mans Sky Randomizer
+Dark Souls RandomizerD
+Dark Souls 2 Randomizer
+Lies of P Randomizer 
