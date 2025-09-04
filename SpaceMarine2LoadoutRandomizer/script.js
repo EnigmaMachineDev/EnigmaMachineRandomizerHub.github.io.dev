@@ -61,22 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function rollMission() {
-        const missionTypes = Object.keys(data.missions);
-        const type = getRandomItem(missionTypes);
-        let details = '';
-
-        if (type === 'Operations') {
-            const difficulty = getRandomItem(data.missions.Operations.difficulties);
-            const operation = getRandomItem(data.missions.Operations.operations);
-            details = `${type}: ${operation} (${difficulty})`;
-        } else if (type === 'Seige') {
-            const difficulty = getRandomItem(data.missions.Seige.difficulties);
-            details = `${type} (${difficulty})`;
-        } else if (type === 'PvP') {
-            const mode = getRandomItem(data.missions.PvP.modes);
-            details = `${type}: ${mode}`;
-        }
-        setItem(missionEl, details);
+        const mission = getRandomItem(data.missions);
+        setItem(missionEl, mission);
     }
 
     function randomizeAll() {

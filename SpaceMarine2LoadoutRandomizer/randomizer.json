@@ -8,7 +8,8 @@
         "Stalker Bolt Rifle",
         "Bolt Carbine",
         "Plasma Incinerator",
-        "Melta Rifle"
+        "Melta Rifle",
+        "Pyreblaster"
       ],
       "secondaries": [
         "Bolt Pistol",
@@ -33,7 +34,8 @@
         "Chain Sword",
         "Thunder Hammer",
         "Power Fist",
-        "Power Sword"
+        "Power Sword",
+        "Power Axe"
       ]
     },
     "Vanguard": {
@@ -51,7 +53,8 @@
       ],
       "melee": [
         "Chain Sword",
-        "Combat Knife"
+        "Combat Knife",
+        "Power Axe"
       ]
     },
     "Bulwark": {
@@ -60,7 +63,8 @@
         "Bolt Pistol",
         "Heavy Bolt Pistol",
         "Plasma Pistol",
-        "Neo-Vulkite Pistol"
+        "Neo-Vulkite Pistol",
+        "Power Axe"
       ],
       "melee": [
         "Chain Sword",
@@ -91,7 +95,8 @@
         "Heavy Bolt Rifle",
         "Heavy Bolter",
         "Heavy Plasma Incinerator",
-        "Multi Melta"
+        "Multi Melta",
+        "Pyrecannon"
       ],
       "secondaries": [
         "Bolt Pistol",
@@ -182,40 +187,17 @@
       "Dark Hunters"
     ]
   },
-  "missions": {
-    "Operations": {
-      "difficulties": [
-        "Minimal",
-        "Average",
-        "Substantial",
-        "Ruthless",
-        "Lethal",
-        "Absolute"
-      ],
-      "operations": [
-        "Inferno",
-        "Decapitation",
-        "Vox Liberatis",
-        "Reliquary",
-        "Fall of Atreus",
-        "Ballistic Engine",
-        "Termination",
-        "Obelisk",
-        "Exfiltration"
-      ]
-    },
-    "Seige": {
-      "difficulties": [
-        "Normal",
-        "Hard"
-      ]
-    },
-    "PvP": {
-      "modes": [
-        "Annihilation",
-        "Capture and Control",
-        "Seize Ground"
-      ]
-    }
-  }
+  "missions": [
+    "Inferno",
+    "Decapitation",
+    "Vox Liberatis",
+    "Reliquary",
+    "Fall of Atreus",
+    "Ballistic Engine",
+    "Termination",
+    "Obelisk",
+    "Exfiltration",
+    "Seige",
+    "Vortex"
+  ]
 }
