@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const ascendancySkills = {
         "Pathfinder": ["Bleeding Concoction", "Acidic Concoction", "Shattering Concoction", "Fulminating Concoction", "Explosive Concoction"],
         "Smith of Kitava": ["Manifest Weapon"],
-        "Warbringer": ["Seismic Cry", "Infernal Cry", "Fortifying Cry", "Ancestral Cry"],
-        "Invoker": ["Elemental Expression"]
+        "Warbringer": ["Seismic Cry", "Infernal Cry", "Fortifying Cry", "Ancestral Cry", "Ancestral Spirits"],
+        "Invoker": ["Elemental Expression"],
+        "Infernalist": ["Summon Infernal Hound"],
+        "Amazon": ["Elemental Surge"]
     };
 
     fetch('randomizer.json')
