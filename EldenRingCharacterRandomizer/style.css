@@ -20,6 +20,7 @@ body {
 
 .main-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -118,9 +119,6 @@ a:hover {
 }
 
 .coffee-link {
-    text-align: center;
-    margin-top: 2rem;
-}fee-link {
     text-align: center;
     margin-top: 2rem;
 }
