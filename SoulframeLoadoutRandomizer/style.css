@@ -10,6 +10,16 @@ body {
     margin: 0;
 }
 
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #66cc66;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 .main-wrapper {
     display: flex;
     justify-content: center;
