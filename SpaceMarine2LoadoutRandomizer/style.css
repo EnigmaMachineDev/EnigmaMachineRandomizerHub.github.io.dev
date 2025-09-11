@@ -11,13 +11,11 @@ body {
 }
 
 .back-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
     color: #66cc66;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .main-wrapper {
@@ -120,6 +118,9 @@ a:hover {
 }
 
 .coffee-link {
+    text-align: center;
+    margin-top: 2rem;
+}fee-link {
     text-align: center;
     margin-top: 2rem;
 }
