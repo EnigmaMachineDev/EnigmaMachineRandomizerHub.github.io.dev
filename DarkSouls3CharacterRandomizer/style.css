@@ -118,6 +118,16 @@ a:hover {
     text-decoration: underline;
 }
 
+#spells-list {
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 0;
+}
+
+#spells-list li {
+    margin-bottom: 0.5rem;
+}
+
 .coffee-link {
     text-align: center;
     margin-top: 2rem;

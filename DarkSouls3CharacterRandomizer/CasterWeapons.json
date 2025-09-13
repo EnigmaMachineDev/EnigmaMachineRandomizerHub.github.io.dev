@@ -1,111 +1,142 @@
-
 [
-    {
-        "name": "Sorcerer's Staff",
-        "url": "https://darksouls.fandom.com/wiki/Sorcerer%27s_Staff_(Dark_Souls_III)"
-    },
-    {
-        "name": "Heretic's Staff",
-        "url": "https://darksouls.fandom.com/wiki/Heretic%27s_Staff"
-    },
-    {
-        "name": "Court Sorcerer's Staff",
-        "url": "https://darksouls.fandom.com/wiki/Court_Sorcerer%27s_Staff"
-    },
-    {
-        "name": "Witchtree Branch",
-        "url": "https://darksouls.fandom.com/wiki/Witchtree_Branch_(Dark_Souls_III)"
-    },
-    {
-        "name": "Storyteller's Staff",
-        "url": "https://darksouls.fandom.com/wiki/Storyteller%27s_Staff"
-    },
-    {
-        "name": "Mendicant's Staff",
-        "url": "https://darksouls.fandom.com/wiki/Mendicant%27s_Staff"
-    },
-    {
-        "name": "Murky Longstaff",
-        "url": "https://darksouls.fandom.com/wiki/Murky_Longstaff"
-    },
-    {
-        "name": "Izalith Staff",
-        "url": "https://darksouls.fandom.com/wiki/Izalith_Staff"
-    },
-    {
-        "name": "Man-grub's Staff",
-        "url": "https://darksouls.fandom.com/wiki/Man-grub%27s_Staff"
-    },
-    {
-        "name": "Preacher's Right Arm",
-        "url": "https://darksouls.fandom.com/wiki/Preacher%27s_Right_Arm"
-    },
-    {
-        "name": "Sage's Crystal Staff",
-        "url": "https://darksouls.fandom.com/wiki/Sage%27s_Crystal_Staff"
-    },
-    {
-        "name": "Archdeacon's Great Staff",
-        "url": "https://darksouls.fandom.com/wiki/Archdeacon%27s_Great_Staff"
-    },
-    {
-        "name": "Pyromancy Flame",
-        "url": "https://darksouls.fandom.com/wiki/Pyromancy_Flame_(Dark_Souls_III)"
-    },
-    {
-        "name": "Pyromancer's Parting Flame",
-        "url": "https://darksouls.fandom.com/wiki/Pyromancer%27s_Parting_Flame"
-    },
-    {
-        "name": "Talisman",
-        "url": "https://darksouls.fandom.com/wiki/Talisman_(Dark_Souls_III)"
-    },
-    {
-        "name": "Canvas Talisman",
-        "url": "https://darksouls.fandom.com/wiki/Canvas_Talisman_(Dark_Souls_III)"
-    },
-    {
-        "name": "Saint's Talisman",
-        "url": "https://darksouls.fandom.com/wiki/Saint%27s_Talisman"
-    },
-    {
-        "name": "Sunlight Talisman",
-        "url": "https://darksouls.fandom.com/wiki/Sunlight_Talisman_(Dark_Souls_III)"
-    },
-    {
-        "name": "Sunless Talisman",
-        "url": "https://darksouls.fandom.com/wiki/Sunless_Talisman"
-    },
-    {
-        "name": "White Hair Talisman",
-        "url": "https://darksouls.fandom.com/wiki/White_Hair_Talisman"
-    },
-    {
-        "name": "Cleric's Sacred Chime",
-        "url": "https://darksouls.fandom.com/wiki/Cleric%27s_Sacred_Chime_(Dark_Souls_III)"
-    },
-    {
-        "name": "Priest's Chime",
-        "url": "https://darksouls.fandom.com/wiki/Priest%27s_Chime_(Dark_Souls_III)"
-    },
-    {
-        "name": "Saint-tree Bellvine",
-        "url": "https://darksouls.fandom.com/wiki/Saint-tree_Bellvine"
-    },
-    {
-        "name": "Yorshka's Chime",
-        "url": "https://darksouls.fandom.com/wiki/Yorshka%27s_Chime"
-    },
-    {
-        "name": "Caitha's Chime",
-        "url": "https://darksouls.fandom.com/wiki/Caitha%27s_Chime_(Dark_Souls_III)"
-    },
-    {
-        "name": "Crystal Chime",
-        "url": "https://darksouls.fandom.com/wiki/Crystal_Chime"
-    },
-    {
-        "name": "Sacred Chime of Filianore",
-        "url": "https://darksouls.fandom.com/wiki/Sacred_Chime_of_Filianore"
-    }
+  {
+    "name": "Priest's Chime",
+    "type": "Chime",
+    "link": "https://darksouls3.wiki.fextralife.com/Priest's+Chime"
+  },
+  {
+    "name": "Cleric's Sacred Chime",
+    "type": "Chime",
+    "link": "https://darksouls3.wiki.fextralife.com/Cleric's+Sacred+Chime"
+  },
+  {
+    "name": "Caitha's Chime",
+    "type": "Chime",
+    "link": "https://darksouls3.wiki.fextralife.com/Caitha's+Chime"
+  },
+  {
+    "name": "Saint-tree Bellvine",
+    "type": "Chime",
+    "link": "https://darksouls3.wiki.fextralife.com/Saint-tree+Bellvine"
+  },
+  {
+    "name": "Crystal Chime",
+    "type": "Chime",
+    "link": "https://darksouls3.wiki.fextralife.com/Crystal+Chime"
+  },
+  {
+    "name": "Yorshka's Chime",
+    "type": "Chime",
+    "link": "https://darksouls3.wiki.fextralife.com/Yorshka's+Chime"
+  },
+  {
+    "name": "Sacred Chime of Filianore",
+    "type": "Chime",
+    "link": "https://darksouls3.wiki.fextralife.com/Sacred+Chime+of+Filianore"
+  },
+  {
+    "name": "Talisman",
+    "type": "Talisman",
+    "link": "https://darksouls3.wiki.fextralife.com/Talisman"
+  },
+  {
+    "name": "Saint's Talisman",
+    "type": "Talisman",
+    "link": "https://darksouls3.wiki.fextralife.com/Saint's+Talisman"
+  },
+  {
+    "name": "Sunlight Talisman",
+    "type": "Talisman",
+    "link": "https://darksouls3.wiki.fextralife.com/Sunlight+Talisman"
+  },
+  {
+    "name": "White Hair Talisman",
+    "type": "Talisman",
+    "link": "https://darksouls3.wiki.fextralife.com/White+Hair+Talisman"
+  },
+  {
+    "name": "Sunless Talisman",
+    "type": "Talisman",
+    "link": "https://darksouls3.wiki.fextralife.com/Sunless+Talisman"
+  },
+  {
+    "name": "Canvas Talisman",
+    "type": "Talisman",
+    "link": "https://darksouls3.wiki.fextralife.com/Canvas+Talisman"
+  },
+  {
+    "name": "Pyromancy Flame",
+    "type": "Flame",
+    "link": "https://darksouls3.wiki.fextralife.com/Pyromancy+Flame"
+  },
+  {
+    "name": "Pyromancer's Parting Flame",
+    "type": "Flame",
+    "link": "https://darksouls3.wiki.fextralife.com/Pyromancer's+Parting+Flame"
+  },
+  {
+    "name": "Demon's Scar",
+    "type": "Flame",
+    "link": "https://darksouls3.wiki.fextralife.com/Demon's+Scar"
+  },
+  {
+    "name": "Sorcerer's Staff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Sorcerer's+Staff"
+  },
+  {
+    "name": "Court Sorcerer's Staff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Court+Sorcerer's+Staff"
+  },
+  {
+    "name": "Heretic's Staff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Heretic's+Staff"
+  },
+  {
+    "name": "Witch Tree Branch",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Witch+Tree+Branch"
+  },
+  {
+    "name": "Sage's Crystal Staff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Sage's+Crystal+Staff"
+  },
+  {
+    "name": "Izalith Staff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Izalith+Staff"
+  },
+  {
+    "name": "Storyteller's Staff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Storyteller's+Staff"
+  },
+  {
+    "name": "Archdeacon Great Staff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Archdeacon's+Great+Staff"
+  },
+  {
+    "name": "Man-Grub's Staff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Man-Grub's+Staff"
+  },
+  {
+    "name": "Mendicant's Staff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Mendicant's+Staff"
+  },
+  {
+    "name": "Preacher's Right Arm",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Preacher's+Right+Arm"
+  },
+  {
+    "name": "Murky Longstaff",
+    "type": "Staff",
+    "link": "https://darksouls3.wiki.fextralife.com/Murky+Longstaff"
+  }
 ]

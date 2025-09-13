@@ -16,6 +16,15 @@
             <h1>Dark Souls 3 Character Randomizer</h1>
             <button class="reroll-btn" id="generate-loadout">Generate Character</button>
             <div class="section">
+                <div class="section-header">
+                    <h2>Weapon</h2>
+                    <button class="reroll-btn" id="reroll-weapon">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="weapon-link" href="#" target="_blank"><span id="weapon"></span></a>
+                </div>
+            </div>
+            <div class="section">
                     <div class="section-header">
                         <h2>Armor Set</h2>
                         <button class="reroll-btn" id="reroll-armor">↻</button>
@@ -60,16 +69,7 @@
                         <a id="ring4-link" href="#" target="_blank"><span id="ring4"></span></a>
                     </div>
                 </div>
-                <div class="section">
-                    <div class="section-header">
-                        <h2>Weapon</h2>
-                        <button class="reroll-btn" id="reroll-weapon">↻</button>
-                    </div>
-                    <div class="item-container">
-                        <a id="weapon-link" href="#" target="_blank"><span id="weapon"></span></a>
-                    </div>
-                </div>
-                <div class="section">
+                <div class="section" id="caster-weapon-section" style="display: none;">
                     <div class="section-header">
                         <h2>Caster Weapon</h2>
                         <button class="reroll-btn" id="reroll-caster-weapon">↻</button>
@@ -77,6 +77,13 @@
                     <div class="item-container">
                         <a id="caster-weapon-link" href="#" target="_blank"><span id="caster-weapon"></span></a>
                     </div>
+                </div>
+                <div class="section" id="spells-section">
+                    <div class="section-header">
+                        <h2 id="spell-type-label">Spells: (None)</h2>
+                        <button class="reroll-btn" id="reroll-spells">↻</button>
+                    </div>
+                    <ul id="spells-list"></ul>
                 </div>
         </div>
     </div>
