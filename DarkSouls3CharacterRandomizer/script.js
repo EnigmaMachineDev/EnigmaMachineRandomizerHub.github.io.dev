@@ -176,5 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
         rerollSpellsBtn.addEventListener('click', generateSpells);
         rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);
         generateLoadoutBtn.addEventListener('click', randomizeAll);
-    }).catch(error => console.error('Error loading data:', error));
+    }).catch(error => {
+        console.error('Error loading data:', error);
+        alert('Failed to load necessary data. Please check the console for more details and ensure all .json files are present and correctly formatted.');
+    });
 });
