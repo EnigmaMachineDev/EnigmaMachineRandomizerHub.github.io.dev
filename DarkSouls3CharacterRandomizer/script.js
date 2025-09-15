@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         casterWeaponEl.textContent = casterWeaponName;
-        casterWeaponLinkEl.href = casterWeaponLink;
+        casterWeaponLink.href = casterWeaponLink;
     }
 
     function randomizeAll() {
