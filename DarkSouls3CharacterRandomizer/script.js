@@ -153,11 +153,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     Promise.all([
-        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/armor.json').then(res => res.json()),
-        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/rings.json').then(res => res.json()),
-        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/weapons.json').then(res => res.json()),
-        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/spells.json').then(res => res.json()),
-        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/casterWeapons.json').then(res => res.json())
+        fetch('/DarkSouls3CharacterRandomizer/armor.json').then(res => res.json()),
+        fetch('/DarkSouls3CharacterRandomizer/rings.json').then(res => res.json()),
+        fetch('/DarkSouls3CharacterRandomizer/weapons.json').then(res => res.json()),
+        fetch('/DarkSouls3CharacterRandomizer/spells.json').then(res => res.json()),
+        fetch('/DarkSouls3CharacterRandomizer/casterWeapons.json').then(res => res.json())
     ]).then(([armor, rings, weapons, spells, casterWeapons]) => {
         armorData = armor;
         ringsData = rings;
