@@ -121,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
         casterWeaponSectionEl.style.display = 'block';
 
         let casterWeaponName = 'None';
-        let casterWeaponLink = '#';
         let applicableWeapons = [];
 
         if (currentSpellType === 'Sorcery') {
@@ -135,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (applicableWeapons.length > 0) {
             const randomWeapon = getRandomElement(applicableWeapons);
             casterWeaponName = randomWeapon.name;
-            casterWeaponLink = randomWeapon.link;
+            casterWeaponLink.href = randomWeapon.link;
         }
 
         casterWeaponEl.textContent = casterWeaponName;
