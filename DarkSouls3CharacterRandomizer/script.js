@@ -153,11 +153,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     Promise.all([
-        fetch('armor.json').then(res => res.json()),
-        fetch('rings.json').then(res => res.json()),
-        fetch('weapons.json').then(res => res.json()),
-        fetch('spells.json').then(res => res.json()),
-        fetch('casterWeapons.json').then(res => res.json())
+        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/armor.json').then(res => res.json()),
+        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/rings.json').then(res => res.json()),
+        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/weapons.json').then(res => res.json()),
+        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/spells.json').then(res => res.json()),
+        fetch('/EnigmaMachineRandomizerHub.github.io.dev/DarkSouls3CharacterRandomizer/casterWeapons.json').then(res => res.json())
     ]).then(([armor, rings, weapons, spells, casterWeapons]) => {
         armorData = armor;
         ringsData = rings;
