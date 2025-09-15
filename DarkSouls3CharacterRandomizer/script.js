@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!weaponsData) return;
         const randomWeapon = getRandomElement(weaponsData);
         weaponEl.textContent = randomWeapon.name;
-        weaponLink.href = randomWeapon.link;
+        weaponLink.href = randomWeapon.url || randomWeapon.link;
     }
 
     function generateSpells() {
@@ -138,7 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         casterWeaponEl.textContent = casterWeaponName;
-        casterWeaponLink.href = casterWeaponLink;
     }
 
     function randomizeAll() {
