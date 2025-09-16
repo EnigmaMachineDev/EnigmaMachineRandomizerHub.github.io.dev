@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const armorEl = document.getElementById('armor');
-    const ring1El = document.getElementById('ring1');
-    const ring2El = document.getElementById('ring2');
-    const ring3El = document.getElementById('ring3');
-    const ring4El = document.getElementById('ring4');
+    const ringsListEl = document.getElementById('rings-list');
     const weaponEl = document.getElementById('weapon');
     const casterWeaponEl = document.getElementById('caster-weapon');
     const spellsListEl = document.getElementById('spells-list');
@@ -11,18 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const casterWeaponSectionEl = document.getElementById('caster-weapon-section');
 
     const armorLink = document.getElementById('armor-link');
-    const ring1Link = document.getElementById('ring1-link');
-    const ring2Link = document.getElementById('ring2-link');
-    const ring3Link = document.getElementById('ring3-link');
-    const ring4Link = document.getElementById('ring4-link');
     const weaponLink = document.getElementById('weapon-link');
     const casterWeaponLink = document.getElementById('caster-weapon-link');
 
     const rerollArmorBtn = document.getElementById('reroll-armor');
-    const rerollRing1Btn = document.getElementById('reroll-ring1');
-    const rerollRing2Btn = document.getElementById('reroll-ring2');
-    const rerollRing3Btn = document.getElementById('reroll-ring3');
-    const rerollRing4Btn = document.getElementById('reroll-ring4');
+    const rerollRingsBtn = document.getElementById('reroll-rings');
     const rerollWeaponBtn = document.getElementById('reroll-weapon');
     const rerollCasterWeaponBtn = document.getElementById('reroll-caster-weapon');
     const rerollSpellsBtn = document.getElementById('reroll-spells');
@@ -44,11 +34,24 @@ document.addEventListener('DOMContentLoaded', () => {
         armorLink.href = randomArmor.link;
     }
 
-    function generateRing(ringEl, ringLink) {
+    function generateRings() {
         if (!ringsData) return;
-        const randomRing = getRandomElement(ringsData);
-        ringEl.textContent = randomRing.name;
-        ringLink.href = randomRing.link;
+        const numberOfRings = 4;
+        const selectedRings = [];
+        const ringsCopy = [...ringsData];
+
+        for (let i = 0; i < numberOfRings; i++) {
+            if (ringsCopy.length === 0) break;
+            const randomIndex = Math.floor(Math.random() * ringsCopy.length);
+            selectedRings.push(ringsCopy.splice(randomIndex, 1)[0]);
+        }
+
+        ringsListEl.innerHTML = '';
+        selectedRings.forEach(ring => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="${ring.link}" target="_blank">${ring.name}</a>`;
+            ringsListEl.appendChild(li);
+        });
     }
 
     function generateWeapon() {
@@ -142,10 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function randomizeAll() {
         generateArmor();
-        generateRing(ring1El, ring1Link);
-        generateRing(ring2El, ring2Link);
-        generateRing(ring3El, ring3Link);
-        generateRing(ring4El, ring4Link);
+        generateRings();
         generateWeapon();
         generateSpells();
     }
@@ -162,10 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             randomizeAll();
 
             rerollArmorBtn.addEventListener('click', generateArmor);
-            rerollRing1Btn.addEventListener('click', () => generateRing(ring1El, ring1Link));
-            rerollRing2Btn.addEventListener('click', () => generateRing(ring2El, ring2Link));
-            rerollRing3Btn.addEventListener('click', () => generateRing(ring3El, ring3Link));
-            rerollRing4Btn.addEventListener('click', () => generateRing(ring4El, ring4Link));
+            rerollRingsBtn.addEventListener('click', generateRings);
             rerollWeaponBtn.addEventListener('click', generateWeapon);
             rerollSpellsBtn.addEventListener('click', generateSpells);
             rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);
