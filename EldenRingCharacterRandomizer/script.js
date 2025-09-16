@@ -50,6 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
         armorLinkEl.href = randomArmorSet.link;
     }
 
+    function generateTalisman(talismanElement, talismanLinkElement) {
+        if (!allTalismansData) return;
+        const randomTalisman = getRandomElement(allTalismansData);
+        talismanElement.textContent = randomTalisman.name;
+        talismanLinkElement.href = randomTalisman.link;
+    }
+
     function generateTalismans() {
         if (!allTalismansData) return;
         const numberOfTalismans = 4;
@@ -63,10 +70,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         talismanListEl.innerHTML = '';
-        selectedTalismans.forEach(talisman => {
-            const li = document.createElement('li');
-            li.innerHTML = `<a href="${talisman.link}" target="_blank">${talisman.name}</a>`;
-            talismanListEl.appendChild(li);
+        selectedTalismans.forEach((talisman, i) => {
+            const itemRow = document.createElement('div');
+            itemRow.className = 'item-row';
+
+            const link = document.createElement('a');
+            link.href = talisman.link;
+            link.target = '_blank';
+            
+            const span = document.createElement('span');
+            span.textContent = talisman.name;
+            link.appendChild(span);
+
+            const rerollBtn = document.createElement('button');
+            rerollBtn.className = 'reroll-btn';
+            rerollBtn.textContent = '↻';
+            rerollBtn.addEventListener('click', () => {
+                const newTalisman = getRandomElement(allTalismansData);
+                span.textContent = newTalisman.name;
+                link.href = newTalisman.link;
+            });
+
+            itemRow.appendChild(link);
+            itemRow.appendChild(rerollBtn);
+            talismanListEl.appendChild(itemRow);
         });
     }
 

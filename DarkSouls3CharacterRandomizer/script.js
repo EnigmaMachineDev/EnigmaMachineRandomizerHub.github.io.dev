@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollRing2Btn = document.getElementById('reroll-ring2');
     const rerollRing3Btn = document.getElementById('reroll-ring3');
     const rerollRing4Btn = document.getElementById('reroll-ring4');
+    const rerollRingsBtn = document.getElementById('reroll-rings');
     const rerollWeaponBtn = document.getElementById('reroll-weapon');
     const rerollCasterWeaponBtn = document.getElementById('reroll-caster-weapon');
     const rerollSpellsBtn = document.getElementById('reroll-spells');
@@ -49,6 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const randomRing = getRandomElement(ringsData);
         ringEl.textContent = randomRing.name;
         ringLink.href = randomRing.link;
+    }
+
+    function generateRings() {
+        generateRing(ring1El, ring1Link);
+        generateRing(ring2El, ring2Link);
+        generateRing(ring3El, ring3Link);
+        generateRing(ring4El, ring4Link);
     }
 
     function generateWeapon() {
@@ -142,10 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function randomizeAll() {
         generateArmor();
-        generateRing(ring1El, ring1Link);
-        generateRing(ring2El, ring2Link);
-        generateRing(ring3El, ring3Link);
-        generateRing(ring4El, ring4Link);
+        generateRings();
         generateWeapon();
         generateSpells();
     }
@@ -166,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
             rerollRing2Btn.addEventListener('click', () => generateRing(ring2El, ring2Link));
             rerollRing3Btn.addEventListener('click', () => generateRing(ring3El, ring3Link));
             rerollRing4Btn.addEventListener('click', () => generateRing(ring4El, ring4Link));
+            rerollRingsBtn.addEventListener('click', generateRings);
             rerollWeaponBtn.addEventListener('click', generateWeapon);
             rerollSpellsBtn.addEventListener('click', generateSpells);
             rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);

@@ -82,9 +82,9 @@ h2 {
 
 .item-container {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start; /* Align item to the left */
     min-height: 2em;
-    padding-left: 10px; /* Indent item text slightly */
 }
 
 .reroll-btn {
@@ -116,6 +116,33 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+#talisman-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#spirit-ashes-list {
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 0;
+}
+
+#spells-list {
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 0;
 }
 
 .coffee-link {
