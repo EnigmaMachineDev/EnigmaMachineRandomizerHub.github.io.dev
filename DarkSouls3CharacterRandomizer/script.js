@@ -150,32 +150,29 @@ document.addEventListener('DOMContentLoaded', () => {
         generateSpells();
     }
 
-    Promise.all([
-        fetch('armor.json').then(res => res.json()),
-        fetch('rings.json').then(res => res.json()),
-        fetch('weapons.json').then(res => res.json()),
-        fetch('spells.json').then(res => res.json()),
-        fetch('casterweapons.json').then(res => res.json())
-    ]).then(([armor, rings, weapons, spells, casterWeapons]) => {
-        armorData = armor;
-        ringsData = rings;
-        weaponsData = weapons;
-        spellsData = spells;
-        casterWeaponsData = casterWeapons;
+    fetch('randomizer.json')
+        .then(res => res.json())
+        .then(data => {
+            armorData = data.armor;
+            ringsData = data.rings;
+            weaponsData = data.weapons;
+            spellsData = data.spells;
+            casterWeaponsData = data.casterweapons;
 
-        randomizeAll();
+            randomizeAll();
 
-        rerollArmorBtn.addEventListener('click', generateArmor);
-        rerollRing1Btn.addEventListener('click', () => generateRing(ring1El, ring1Link));
-        rerollRing2Btn.addEventListener('click', () => generateRing(ring2El, ring2Link));
-        rerollRing3Btn.addEventListener('click', () => generateRing(ring3El, ring3Link));
-        rerollRing4Btn.addEventListener('click', () => generateRing(ring4El, ring4Link));
-        rerollWeaponBtn.addEventListener('click', generateWeapon);
-        rerollSpellsBtn.addEventListener('click', generateSpells);
-        rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);
-        generateLoadoutBtn.addEventListener('click', randomizeAll);
-    }).catch(error => {
-        console.error('Error loading data:', error);
-        alert('Failed to load necessary data. Please check the console for more details and ensure all .json files are present and correctly formatted.');
-    });
+            rerollArmorBtn.addEventListener('click', generateArmor);
+            rerollRing1Btn.addEventListener('click', () => generateRing(ring1El, ring1Link));
+            rerollRing2Btn.addEventListener('click', () => generateRing(ring2El, ring2Link));
+            rerollRing3Btn.addEventListener('click', () => generateRing(ring3El, ring3Link));
+            rerollRing4Btn.addEventListener('click', () => generateRing(ring4El, ring4Link));
+            rerollWeaponBtn.addEventListener('click', generateWeapon);
+            rerollSpellsBtn.addEventListener('click', generateSpells);
+            rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);
+            generateLoadoutBtn.addEventListener('click', randomizeAll);
+        })
+        .catch(error => {
+            console.error('Error loading data:', error);
+            alert('Failed to load necessary data. Please check the console for more details and ensure the .json file is present and correctly formatted.');
+        });
 });
