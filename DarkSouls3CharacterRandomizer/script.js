@@ -145,7 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function randomizeAll() {
         generateArmor();
-        generateRings();
+        generateRing(ring1El, ring1Link);
+        generateRing(ring2El, ring2Link);
+        generateRing(ring3El, ring3Link);
+        generateRing(ring4El, ring4Link);
         generateWeapon();
         generateSpells();
     }
@@ -162,7 +165,10 @@ document.addEventListener('DOMContentLoaded', () => {
             randomizeAll();
 
             rerollArmorBtn.addEventListener('click', generateArmor);
-            rerollRingsBtn.addEventListener('click', generateRings);
+            rerollRing1Btn.addEventListener('click', () => generateRing(ring1El, ring1Link));
+            rerollRing2Btn.addEventListener('click', () => generateRing(ring2El, ring2Link));
+            rerollRing3Btn.addEventListener('click', () => generateRing(ring3El, ring3Link));
+            rerollRing4Btn.addEventListener('click', () => generateRing(ring4El, ring4Link));
             rerollWeaponBtn.addEventListener('click', generateWeapon);
             rerollSpellsBtn.addEventListener('click', generateSpells);
             rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);
