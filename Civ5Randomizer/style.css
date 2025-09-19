@@ -38,7 +38,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
-#generate-character {
+.generate-btn {
     background-color: #66cc66;
     color: #222222;
     border: none;
@@ -51,7 +51,7 @@ h1 {
     height: auto; /* Allow button to size to content */
 }
 
-#generate-character:hover {
+.generate-btn:hover {
     background-color: #88e888;
 }
 
