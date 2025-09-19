@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollSkillsBtn = document.getElementById('reroll-skills');
     const rerollAllegiancesBtn = document.getElementById('reroll-allegiances');
     const rerollStartBtn = document.getElementById('reroll-start');
+    const additionalStartsCheckbox = document.getElementById('additional-starts');
 
     const raceEl = document.getElementById('race');
     const skillsListEl = document.getElementById('skills-list');
@@ -74,7 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateStart() {
-        const availableStarts = data.starts.filter(start => start.race === 'all' || start.race === selectedRace);
+        let availableStarts = data.starts.filter(start => start.race === 'all' || start.race === selectedRace);
+        if (!additionalStartsCheckbox.checked) {
+            availableStarts = availableStarts.filter(start => !start.addOn);
+        }
         let selectedStart = getRandomElement(availableStarts);
 
         let startText = selectedStart.name;
@@ -99,4 +103,5 @@ document.addEventListener('DOMContentLoaded', () => {
     rerollSkillsBtn.addEventListener('click', generateSkills);
     rerollAllegiancesBtn.addEventListener('click', generateAllegiances);
     rerollStartBtn.addEventListener('click', generateStart);
+    additionalStartsCheckbox.addEventListener('change', generateStart);
 });
