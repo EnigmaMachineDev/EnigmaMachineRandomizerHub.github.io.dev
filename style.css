@@ -245,6 +245,11 @@
             }
         }
 
+        .about-content {
+            text-align: center;
+            padding: 1rem;
+        }
+
         /* Accessibility */
         .tool-card:focus {
             outline: 2px solid var(--primary-green);
