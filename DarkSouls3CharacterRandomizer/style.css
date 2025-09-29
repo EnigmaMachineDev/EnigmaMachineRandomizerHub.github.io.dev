@@ -144,8 +144,14 @@ a:hover {
     padding: 1rem;
 }
 
+.about-section h2 {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .about-content {
         padding: 0.5rem;
     }
 }
+
+

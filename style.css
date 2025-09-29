@@ -96,6 +96,7 @@
             border-left: 4px solid var(--primary-green);
             text-transform: uppercase;
             letter-spacing: 1px;
+            text-align: center;
         }
 
         /* Tool Grid */
@@ -249,7 +250,7 @@
             text-align: center;
             padding: 1rem;
         }
-
+        
         /* Accessibility */
         .tool-card:focus {
             outline: 2px solid var(--primary-green);
