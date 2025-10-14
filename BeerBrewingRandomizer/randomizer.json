@@ -11,7 +11,9 @@
           "Double/Imperial IPA",
           "Session IPA",
           "Belgian Pale Ale",
-          "Bière de Garde"
+          "Bière de Garde",
+          "Rye IPA",
+          "Black IPA"
         ],
         "brown_ales": [
           "American Brown Ale",
@@ -40,13 +42,14 @@
           "American Stout",
           "Chocolate Stout",
           "Coffee Stout",
-          "Oyster Stout"
+          "Oyster Stout",
+          "Rye Stout"
         ],
         "belgian_ales": [
           "Belgian Blonde Ale",
           "Belgian Dubbel",
           "Belgian Tripel",
-          "Belgian Quadrupel (Quad)",
+          "Belgian Quadrupel",
           "Belgian Strong Dark Ale",
           "Belgian Strong Golden Ale",
           "Saison (Farmhouse Ale)",
@@ -103,20 +106,20 @@
         "pale_lagers": [
           "American Lager",
           "Premium American Lager",
-          "Light Lager (Lite Beer)",
+          "Light Lager",
           "Czech Pilsner",
           "German Pilsner",
           "American Pilsner",
           "Helles (Munich Helles)",
-          "Dortmunder Export",
-          "Vienna Lager"
+          "Dortmunder Export"
         ],
         "amber_and_dark_lagers": [
           "Märzen/Oktoberfest",
           "Amber Lager",
           "Dunkel (Munich Dunkel)",
           "Schwarzbier (Black Lager)",
-          "Tmavé (Czech Dark Lager)"
+          "Tmavé (Czech Dark Lager)",
+          "Vienna Lager"
         ],
         "strong_lagers": [
           "Doppelbock",
